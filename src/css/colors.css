@@ -1,0 +1,13 @@
+@theme {
+  --color-blue-primary: #e6f0fe;
+  --color-blue-50: #b0d0fd;
+  --color-blue-100: #8abafb;
+  --color-blue-200: #549afa;
+  --color-blue-300: #3386f9;
+  --color-blue-400: #0068f7;
+  --color-blue-600: #005fe1;
+  --color-blue-700: #004aaf;
+  --color-blue-800: #003988;
+  --color-gray-900: #111927;
+  --color-gray-primary: #0d121c;
+}

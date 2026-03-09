@@ -1,0 +1,22 @@
+@import "tailwindcss";
+@import "./css/colors.css";
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+
+:root {
+  line-height: 1;
+  overflow-x: hidden;
+}
+
+body {
+  margin: 0;
+  background-color: var(--color-gray-primary);
+  font-family: "Rubik", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1 {
+  @apply font-bold text-3xl text-blue-primary;
+}
