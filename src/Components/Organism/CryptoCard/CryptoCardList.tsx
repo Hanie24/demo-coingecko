@@ -1,4 +1,4 @@
-import { useTopGainers } from "../../../services/useTopGainers";
+import { useTopGainers } from "../../../services/gainers/useTopGainers";
 import Columns from "../../Templates/Columns/Columns";
 import CryptoCard from "./CryptoCard";
 

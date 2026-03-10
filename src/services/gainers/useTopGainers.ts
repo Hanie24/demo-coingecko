@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
-import type { Coin } from "../types/coin";
-import { getTopGainers } from "./coin.service";
+import type { Coin } from "./coin";
+import { getTopGainers } from "./getTopGainers.service";
 
 export function useTopGainers() {
   const [coins, setCoins] = useState<Coin[]>([]);

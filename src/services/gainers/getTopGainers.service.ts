@@ -1,6 +1,6 @@
-import type { Coin } from "../types/coin";
-import { fetchCoinGecko } from "./apiClient";
-import { COINGECKO_ENDPOINTS } from "./endpoints";
+import { fetchCoinGecko } from "../apiClient";
+import { COINGECKO_ENDPOINTS } from "../endpoints";
+import type { Coin } from "./coin";
 
 export function getTopGainers() {
   return fetchCoinGecko<Coin[]>(COINGECKO_ENDPOINTS.MARKETS, {
