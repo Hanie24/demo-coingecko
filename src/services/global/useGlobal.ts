@@ -9,7 +9,6 @@ export function useGlobal() {
   useEffect(() => {
     async function load() {
       const data = await getGlobals();
-      console.log(data);
       setGlobal(data);
       setLoading(false);
     }
