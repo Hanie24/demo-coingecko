@@ -7,8 +7,12 @@ export default function GlobalGrid() {
   const { global, loading } = useGlobal();
   return (
     <Columns>
-      <MarketCap global={global} loading={loading}></MarketCap>
-      <TradigVolume global={global} loading={loading}></TradigVolume>
+      <div className="flex flex-col gap-4 flex-1 min-w-0">
+        <MarketCap global={global} loading={loading} />
+      </div>
+      <div className="flex-1 min-w-0">
+        <TradigVolume global={global} loading={loading} />
+      </div>
     </Columns>
   );
 }
