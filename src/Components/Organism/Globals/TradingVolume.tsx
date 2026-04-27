@@ -3,6 +3,7 @@ import Subtitle from "../../Atoms/Subtitle/Subtitle";
 import Text from "../../Atoms/Text/Text";
 import Card from "../Card/Card";
 import type { GlobalsProps } from "./globals.types";
+import TradingVolumeChart from "./TradingVolumeChart";
 
 export default function TradigVolume({ global, loading }: GlobalsProps) {
   const volume = global?.data.total_volume.usd;
@@ -13,6 +14,7 @@ export default function TradigVolume({ global, loading }: GlobalsProps) {
     <Card>
       <Subtitle>Trading Volume </Subtitle>
       <Text className="mt-4 text-blue-50">{formatCurrency(volume)}</Text>
+      <TradingVolumeChart />
     </Card>
   );
 }
